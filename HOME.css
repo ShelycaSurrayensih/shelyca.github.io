@@ -1,0 +1,108 @@
+/*<!-- Shelyca Surrayensih---->
+<!-- TI-2C---->*/
+body{
+	background-color: #121212;
+}
+
+#nav {	
+	height: 60px;	
+	font-family: 'IrisUPC';
+	font-weight: bold;
+	font-size: 50pt;
+	text-align: center;
+	position: fixed;
+	width: 80%;
+	top: 0;
+	left: 0;
+	box-shadow: 4px 4px 2px #121212;
+}
+
+#nav a:link{
+	color: white;
+	text-decoration:none;
+}
+
+#nav a:visited{
+	color: white;
+	text-decoration:none;
+}
+
+#nav a:hover{
+	color: lightblue;
+	text-decoration:none;
+}
+
+#nav a:hover{
+	color: active;
+	text-decoration:none;
+}
+
+#header{
+	background-image: url("img/HOME.jpg");	
+	background-size: cover;	
+}
+
+#nama{	
+	font-family: 'Rage Italic';
+	font-size: 48pt;
+	color: white;
+	text-align: center;
+}
+
+#bio{
+	font-family: 'IrisUPC';
+	text-align: center;
+	font-size: 24pt;
+	color: white;
+	font-style: normal;
+	letter-spacing: 5px;
+}
+
+#about{
+	font-family: 'IrisUPC';
+	font-size: 21pt;
+}
+
+#rata{
+	text-align: justify;
+}
+
+#photograph{
+	text-align: center;
+	background-image: url('img/blue.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#judul{
+	color: white;
+	font-family: 'IrisUPC';
+	font-size: 70pt;
+	font-weight: bold;
+	letter-spacing: 5px;
+	text-align: center;
+}
+
+#photo{
+	color: white;
+	letter-spacing: 8px;
+	text-align: center;
+}
+
+#art{
+	text-align: center;
+}
+
+#judul2{
+	color: white;
+	font-family: 'IrisUPC';
+	font-size: 70pt;
+	font-weight: bold;
+	letter-spacing: 20px;
+}
+
+#contact{
+	font-size: 24pt;
+	font-family: 'IrisUPC';
+
+}

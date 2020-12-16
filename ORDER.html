@@ -1,0 +1,179 @@
+<!-- Shelyca Surrayensih---->
+<!-- TI-2C---->
+<DOCTYPE HTML>
+<HTML>
+	<head>
+		<title>Shelyca Surrayensih</title>
+		<link rel="stylesheet" type="text/css" href="ORDER.css">	
+		<script src="jquery-3.5.1.js"></script>
+		<script src="jquery-ui-1.12.1/jquery-ui.js"></script>
+		<script>
+			function form_process() {
+                var harga_makanan = 0;
+                var diskon = 0;
+                var id = document.getElementById('id').value;
+                var nama_customer= document.getElementById('nama_customer').value;
+                var member = document.querySelector('input[name = member]:checked').value;
+                var menu = document.getElementById('menu').value;
+                var jumlah = document.getElementById('jumlah').value;
+                if (menu == "15k") {
+                    harga_makanan = 15000;
+                }else if (menu == "5k") {
+                    harga_makanan = 5000;
+                } else if (menu == "13k") {
+                    harga_makanan = 13000;
+                } else if (menu == "38k") {
+                    harga_makanan = 38000;
+                } else if (menu == "30k") {
+                    harga_makanan = 30000;
+                } else if (menu == "21k") {
+                    harga_makanan = 21000;
+                } else if (menu == "20k") {
+                    harga_makanan = 20000;
+                } else if (menu == "19k") {
+                    harga_makanan = 19000;
+                } 
+
+                if (member == 'Member') {
+                    if (jumlah == 1) {
+                        diskon = harga_makanan * 0.05;
+                    } else if (jumlah <= 3) {
+                        diskon = harga_makanan * 0.07;
+                    } else {
+                        diskon = harga_makanan * 0.1;
+                    }
+                } else if(member == 'Non Member'){
+                    if (jumlah <= 3) {
+                        diskon = 0;
+                    } else if (jumlah <= 5) {
+                        diskon = (harga_makanan * jumlah) * 0.05;
+                    } else {
+                        diskon = harga_makanan * 0.05;
+                    }
+                }
+
+                total = (harga_makanan * jumlah) - diskon;
+                var par = document.createElement("h4")
+                var node = document.createTextNode(
+					" [TOTAL BAYAR : " + total + "]"
+					
+                )
+                par.appendChild(node)
+                document.getElementById("hasil_submit").appendChild(par)
+            }
+        </script>
+  </head>
+  <body>
+  				  
+		<div id="nav">			
+			<table width="90%" height="40px" align="center">
+				<tr>	
+					<div class="judul">
+						<font size="24pt" style="Candara">
+						<td width="10%" align="center"><a href="FILE.html">HOME</a></td>				
+						<td width="10%" align="center"><a href="BIODATA.html">BIODATA</a></td>
+						<td width="10%" align="center"><a href="PROFILE.html">PROFILE</a></td>
+						<td width="10%" align="center"><a href="ORDER.html">ORDER NOW</a></td>
+						</font>
+					</div>
+					<td width="60%">
+						<a href="FILE.html">
+							<div id="de"> Rujakin_Kuy </div>
+						</a>
+					</td>					
+				</tr>
+			</table>			
+		</div>
+		<br><br><br><br><br>
+		
+		<div class="container-satu">
+	      	<div id="jQuery_accordion">
+		      	<h1>MENU</h1>
+		      		<table width="65%" align="center" cellpadding="20" cellspacing="5">
+		      			<tr>
+		      				<td colspan="3" align="center">
+		      					<div id="food">FOOD & DRINK</div>
+		      				</td>
+		      			</tr>
+						<tr>
+							<td><img src="img/a(1).png" width="300" height="300"></td>
+							<td><img src="img/a(2).png" width="300" height="300"></td>
+							<td><img src="img/a(3).png" width="300" height="300"></td>
+						</tr>
+						<tr>
+							<td><img src="img/a(4).png" width="300" height="300"></td>
+							<td><img src="img/a(5).png" width="300" height="300"></td>
+							<td><img src="img/a(6).png" width="300" height="300"></td>
+						</tr>
+						<tr>
+		      				<td colspan="3" align="center">
+		      					<div id="food">MENU PAKET</div>
+		      				</td>
+		      			</tr>
+						<tr>
+							<td><img src="img/B(1).png" width="300" height="300"></td>
+							<td><img src="img/B(2).png" width="300" height="300"></td>
+							<td><img src="img/B(3).png" width="300" height="300"></td>
+						</tr>
+						<tr>
+							<td><img src="img/B(4).png" width="300" height="300"></td>
+							<td><img src="img/B(5).png" width="300" height="300"></td>
+							<td><img src="img/B(6).png" width="300" height="300"></td>
+						</tr>
+						<tr>
+		      				<td colspan="3" align="center">
+				
+				
+        </script>
+
+  </head>
+  <body>
+  	<div class="container-satu">
+	      	<div id="jQuery_accordion">
+		      	<h1>Order Now</h1>
+		      		<table width="65%" align="center" cellpadding="20" cellspacing="5">
+		      			<tr>
+		      				<td colspan="3" align="center">
+  	
+						
+					<label for="id">ID</label><br>
+                    <input type="text" id="id" name="id" required><br>
+                    <label for="nama_Pembeli">Nama </label><br>
+                    <input type="text" id="nama_Pembeli" name="nama_Pembeli" required><br>
+					<br>
+					<label for="menu">Apakah Anda Member ?</label><br><br>
+                    <input type="radio" id="member" name="member" value="Member" required>&nbsp;<label>Member</label><br><br>
+                    <input type="radio" id="member" name="member" value="Non Member" required>&nbsp; <label>Non Member</label><br> <br>
+                    <label for="menu">Pilihan Menu</label><br><br>
+                    <select id="menu" name="menu">
+                        <option value="15k">Mangga cocol atau Nanas Cocol : Rp. 15.000,-</option>
+						<option value="5k">es jeruk : Rp. 5.000,-</option>
+						<option value="5k">es teh : Rp. 5.000,-</option>
+						<option value="13k">Manisan : Rp. 13.000,-</option>
+						<option value="15k">Rujak Sayur : Rp. 5.000,-</option>
+                        <option value="38k">Paket kesempurnaan : Rp. 38.000,-</option>
+                        <option value="30k">Paket kemesraan : Rp. 30.000,-</option>
+                        <option value="21k">Paket kenyamanan : Rp. 21.000,-</option>
+                        <option value="20k">Paket kebahagiaan : Rp. 20.000,-</option>
+                        <option value="20k">Paket kesetiaan : Rp. 20.000,-</option>
+                        <option value="19k">Paket kebersamaan : Rp. 19.000,-</option>
+						
+                    </select><br><br>
+                    <label for="jumlah">Jumlah</label><br><br>
+                    <input type="number" id="jumlah" name="jumlah" required><br><br>
+                    <button type="submit" id="submit" name="submit" class="button" onclick="form_process()">Submit</button>     
+					<br>
+                    <div id="hasil_submit"></div>
+					</center>
+					   
+			  <div class="footer">
+  <p>@Rujakin_Kuy</p>
+</div>
+  </body>
+</html>
+		      	<script type="text/javascript"></script>
+		    	</div>
+		    </div>
+		</div>
+	</body>
+</html>

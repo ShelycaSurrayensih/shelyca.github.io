@@ -1,0 +1,77 @@
+/*<!-- Shelyca Surrayensih---->
+<!-- TI-2C---->*/
+body{
+	background-color: #f9ecc9;
+	margin-left: 200px;
+	margin-right: 200px;
+	margin-top: 20px;
+	margin-bottom: auto;
+}
+
+#nav {		
+	background-color: black;
+	height: 70px;		
+	position: fixed;
+	width: 100%;
+	top: 0;
+	left: 0;
+}
+
+.judul{
+	font-family: 'Candara';
+	font-weight: bold;
+	text-align: center;
+	font-size: 24pt;
+}
+
+#de {
+	font-family: 'Rage Italic';
+	font-weight: bold;
+	font-size: 40pt;
+	padding-right: 70px;
+	text-align: right;
+	color: white;
+	text-shadow: 2px 2px #000000;
+}
+
+#nav a:link{
+	color: white;
+	text-decoration:none;
+}
+
+#nav a:visited{
+	color: white;
+	text-decoration:none;
+}
+
+#nav a:hover{
+	color: lightblue;
+	text-decoration:none;
+}
+
+#nav a:hover{
+	color: active;
+	text-decoration:none;
+}
+
+.nama{	
+	font-family: 'Rage Italic';
+	font-size: 170pt;
+	color: white;
+	text-align: center;
+	padding-top: 280px;	
+	padding-bottom: 270px;
+	line-height: 200px;
+}
+
+#food {
+	font-size: 40pt;
+	font-family: 'Candara';
+	font-weight: bold;
+}
+
+h1{
+	background-color: white;
+	border-radius: 10px;
+	padding-left: 20px;
+}
